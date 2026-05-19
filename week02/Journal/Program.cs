@@ -11,6 +11,9 @@ class Program
         // Journal theJournal = new Journal();
         // Entry anEntry = new Entry();
         // anEntry.Display();
+        PromptGenerator newPrompt = new PromptGenerator();
 
+        string randomPrompt = newPrompt.GetRandomPrompt();
+        Console.WriteLine(randomPrompt);
     }
 }

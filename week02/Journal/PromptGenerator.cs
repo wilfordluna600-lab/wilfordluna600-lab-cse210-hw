@@ -3,7 +3,7 @@ using System.Collections.Generic;
 public class PromptGenerator
 
 {
-    public List<string> prompts = new List<string>()
+    public List<string> _prompts = new List<string>()
     {
         "What conversation or interaction impacted me today?",
         "What did I do today that brought me (even a little) closer to my goals?",
@@ -15,8 +15,8 @@ public class PromptGenerator
     Random random = new Random();
     public string GetRandomPrompt()
     {
-        int randomIndex = random.Next(prompts.Count);
-        string randomPrompt = prompts[randomIndex];
+        int randomIndex = random.Next(_prompts.Count);
+        string randomPrompt = _prompts[randomIndex];
         return randomPrompt;
     }
 

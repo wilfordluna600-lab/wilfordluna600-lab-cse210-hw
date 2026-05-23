@@ -30,13 +30,13 @@ class Program
 
             if (userChoice == "1")
             {
+                randomPrompt = newPrompt.GetRandomPrompt();
                 Console.WriteLine(randomPrompt);
                 string userEntry = Console.ReadLine();
                 Entry newEntry = new Entry();
                 DateTime theCurrentTime = DateTime.Now;
                 String dateText = theCurrentTime.ToShortDateString();
                 newEntry._date = dateText;
-                randomPrompt = newPrompt.GetRandomPrompt();
                 newEntry._promptText = randomPrompt;
                 newEntry._entryText = userEntry;
                 userJournal._entries.Add(newEntry);

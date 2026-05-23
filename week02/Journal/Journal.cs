@@ -5,17 +5,21 @@ public class Journal
 {
     public List<Entry> _entries;
 
-
-    string file = "journal.txt";
-
     public void AddEntry(Entry newEntry)
     {
-
+        if (_entries == null)
+        {
+            _entries = new List<Entry>();
+        }
+        _entries.Add(newEntry);
     }
 
     public void DisplayAll()
     {
-
+        foreach (Entry entry in _entries)
+        {
+            entry.Display();
+        }
     }
 
     public void SaveToFile(string file)
@@ -35,6 +39,19 @@ public class Journal
 
     public void LoadFromFile(string file)
     {
+        Console.WriteLine("Loading list from file...");
+        _entries = new List<Entry>();
+        string[] lines = System.IO.File.ReadAllLines(file);
 
+        foreach (string line in lines)
+        {
+            string[] parts = line.Split('~');
+
+            Entry entry = new Entry();
+            entry._date = parts[0];
+            entry._promptText = parts[1];
+            entry._entryText = parts[2];
+            _entries.Add(entry);
+        }
     }
 }

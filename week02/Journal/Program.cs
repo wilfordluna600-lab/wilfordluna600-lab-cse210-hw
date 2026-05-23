@@ -10,8 +10,9 @@ class Program
 
         string userFile = "";
         Journal userJournal = new Journal();
+        userJournal._entries = new List<Entry>();
         PromptGenerator newPrompt = new PromptGenerator();
-        string randomPrompt = newPrompt.GetRandomPrompt();
+        string randomPrompt = "";
 
 
         string userChoice = "0";
@@ -35,6 +36,7 @@ class Program
                 DateTime theCurrentTime = DateTime.Now;
                 String dateText = theCurrentTime.ToShortDateString();
                 newEntry._date = dateText;
+                randomPrompt = newPrompt.GetRandomPrompt();
                 newEntry._promptText = randomPrompt;
                 newEntry._entryText = userEntry;
                 userJournal._entries.Add(newEntry);
@@ -51,7 +53,7 @@ class Program
             }
             else if (userChoice == "4")
             {
-                Console.WriteLine("What is the filename? ")
+                Console.WriteLine("What is the filename? ");
                 userFile = Console.ReadLine();
                 userJournal.LoadFromFile(userFile);
             }

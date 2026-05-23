@@ -33,8 +33,6 @@ public class Journal
                 outputFile.WriteLine($"{entry._date}~{entry._promptText}~{entry._entryText}");
             }
         }
-
-
     }
 
     public void LoadFromFile(string file)

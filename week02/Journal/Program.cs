@@ -58,15 +58,5 @@ class Program
                 userJournal.LoadFromFile(userFile);
             }
         }
-
-
-
-
-
-        // These next lines are a possibility
-        // I am thinking if I am going to use them
-        // Journal theJournal = new Journal();
-        // Entry anEntry = new Entry();
-        // anEntry.Display();
     }
 }

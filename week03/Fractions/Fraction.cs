@@ -3,8 +3,6 @@ public class Fraction
     private int _top;
     private int _bottom;
 
-    int top = 0;
-    int bottom = 0;
 
     public Fraction()
     {

@@ -6,17 +6,17 @@ class Program
     {
         Console.WriteLine("Hello World! This is the Fractions Project.");
 
-        Fraction firstFraction = new Fraction();
+        Fraction f1 = new Fraction();
 
-        Fraction secondFraction = new Fraction();
-        secondFraction.SetTop(5);
+        Fraction f2 = new Fraction();
+        f2.SetTop(5);
 
-        Fraction thirdFraction = new Fraction();
-        thirdFraction.SetTop(6);
-        thirdFraction.SetBottom(7);
+        Fraction f3 = new Fraction();
+        f3.SetTop(6);
+        f3.SetBottom(7);
 
-        Console.WriteLine($"{firstFraction.GetTop()}/{firstFraction.GetBottom()}");
-        Console.WriteLine($"{secondFraction.GetTop()}/{secondFraction.GetBottom()}");
-        Console.WriteLine($"{thirdFraction.GetTop()}/{thirdFraction.GetBottom()}");
+        Console.WriteLine($"{f1.GetTop()}/{f1.GetBottom()}");
+        Console.WriteLine($"{f2.GetTop()}/{f2.GetBottom()}");
+        Console.WriteLine($"{f3.GetTop()}/{f3.GetBottom()}");
     }
 }

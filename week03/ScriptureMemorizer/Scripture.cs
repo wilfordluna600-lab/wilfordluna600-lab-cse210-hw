@@ -41,8 +41,7 @@ public class Scripture
 
     public bool IsCompletelyHidden()
     {
-        // maybe I will modify this later, I am 
-        // going to think about it
+
         return false;
     }
 }

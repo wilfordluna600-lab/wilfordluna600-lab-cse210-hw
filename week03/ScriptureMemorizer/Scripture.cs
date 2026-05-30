@@ -41,7 +41,13 @@ public class Scripture
 
     public bool IsCompletelyHidden()
     {
-
-        return false;
+        foreach (Word w in _words)
+        {
+            if (!w.IsHidden())
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }

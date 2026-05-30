@@ -18,16 +18,41 @@ public class Scripture
     {
         Random random = new Random();
         int hiddenWordsCount = 0;
+        int index = 0;
         while (hiddenWordsCount < numberToHide)
         {
-            int index = random.Next(_words.Count);
+            index = random.Next(_words.Count);
             if (!_words[index].IsHidden())
             {
                 _words[index].Hide();
                 hiddenWordsCount++;
             }
         }
+
+        int notHidden = 0;
+
+        foreach (Word word in _words)
+        {
+            if (!word.IsHidden())
+            {
+                notHidden++;
+            }
+        }
+
+
+        if (notHidden <= 3)
+        {
+            foreach (Word word in _words)
+            {
+                if (!word.IsHidden())
+                {
+                    word.Hide();
+                }
+            }
+
+        }
     }
+
 
     public string GetDisplayText()
     {

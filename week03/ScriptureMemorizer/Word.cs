@@ -32,10 +32,9 @@ public class Word
         {
             return _text;
         }
-        // I am going to continue with this part tomorrow,
-        // about the case when _isHidden is true.
-        // maybe I will change this part later, I 
-        // am going to think about it more
-        return _text;
+        else
+        {
+            return new string('_', _text.Length);
+        }
     }
 }

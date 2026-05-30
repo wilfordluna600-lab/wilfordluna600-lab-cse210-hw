@@ -3,9 +3,15 @@ public class Scripture
     private Reference _reference;
     private List<Word> _words;
 
-    Scripture(Reference Reference, string text)
+    public Scripture(Reference Reference, string text)
     {
-
+        _reference = Reference;
+        _words = new List<Word>();
+        string[] wordList = text.Split(' ');
+        foreach (string word in wordList)
+        {
+            _words.Add(new Word(word));
+        }
     }
 
     public void HideRandomWords(int numberToHide)

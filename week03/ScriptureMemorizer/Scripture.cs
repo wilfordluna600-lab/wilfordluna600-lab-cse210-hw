@@ -19,16 +19,6 @@ public class Scripture
         Random random = new Random();
         int hiddenWordsCount = 0;
         int index = 0;
-        while (hiddenWordsCount < numberToHide)
-        {
-            index = random.Next(_words.Count);
-            if (!_words[index].IsHidden())
-            {
-                _words[index].Hide();
-                hiddenWordsCount++;
-            }
-        }
-
         int notHidden = 0;
 
         foreach (Word word in _words)
@@ -39,8 +29,19 @@ public class Scripture
             }
         }
 
-
-        if (notHidden <= 3)
+        if (notHidden >= 3)
+        {
+            while (hiddenWordsCount < numberToHide)
+            {
+                index = random.Next(_words.Count);
+                if (!_words[index].IsHidden())
+                {
+                    _words[index].Hide();
+                    hiddenWordsCount++;
+                }
+            }
+        }
+        else
         {
             foreach (Word word in _words)
             {

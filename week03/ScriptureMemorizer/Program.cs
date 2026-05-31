@@ -19,6 +19,7 @@ class Program
         string userInput = Console.ReadLine();
         while (userInput != "quit" && scripture1.IsCompletelyHidden() == false)
         {
+            Console.Clear();
             scripture1.HideRandomWords(3);
             Console.WriteLine(scripture1.GetDisplayText());
             Console.WriteLine("Press enter to continue or type 'quit' to finish.");

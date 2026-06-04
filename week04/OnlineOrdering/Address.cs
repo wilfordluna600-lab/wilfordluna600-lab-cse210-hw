@@ -18,5 +18,8 @@ public class Address
         return _country.ToLower() == "usa";
     }
 
-
+    public string GetFullAddress()
+    {
+        return $""
+    }
 }

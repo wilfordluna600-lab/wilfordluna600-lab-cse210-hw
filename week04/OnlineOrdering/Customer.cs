@@ -11,6 +11,9 @@ public class Customer
         // variable later
     }
 
+    // If this method DoLiveUSA didn't work I probably
+    // would have to change the name of the method,
+    // but also is very possible that works well
     public bool DoLiveUSA()
     {
         return _address.DoLiveUSA();

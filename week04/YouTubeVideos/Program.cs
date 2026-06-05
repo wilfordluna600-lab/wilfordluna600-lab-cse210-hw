@@ -14,7 +14,7 @@ class Program
         comments1.Add(new Comment("Samir", "The footage is stunning! Could you make another short showing local food and cultural experiences in Cusco?"));
         comments1.Add(new Comment("Monica", "Great video! Could you share some tips about the best time of year to visit and how difficult the hike is?"));
 
-        Video video1 = new Video("Machu Picchu (Cuzco) Explained: History, Secrets & Views", "James Anderson", 751, comments1);
+        Video video1 = new Video("Machu Picchu (Cuzco) History, Secrets & Views", "James Anderson", 751, comments1);
 
         List<Comment> comments2 = new List<Comment>();
         comments2.Add(new Comment("Mark", "These pancakes look so fluffy! I'm definitely trying this recipe for breakfast tomorrow."));
@@ -46,6 +46,5 @@ class Program
                 Console.WriteLine(comment.GetDisplayComment());
             }
         }
-
     }
 }

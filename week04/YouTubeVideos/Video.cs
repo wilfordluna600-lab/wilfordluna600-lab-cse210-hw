@@ -23,7 +23,7 @@ public class Video
 
     public string GetFullInfoVideo()
     {
-        return $"Title: {_title} Author: {_author} Length: {_length} seconds\nNumber of Comments: {GetNumberOfComments()}";
+        return $"Title: {_title}\nAuthor: {_author}\nLength: {_length} seconds\nNumber of Comments: {GetNumberOfComments()}";
     }
 
     public List<Comment> GetComments()

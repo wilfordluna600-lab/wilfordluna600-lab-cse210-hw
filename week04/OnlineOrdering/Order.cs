@@ -13,6 +13,18 @@ public class Order
 
     public float GetTotalCost()
     {
+        float totalCost = 0;
+        float shippingCost = 0;
+
+        if (_customer.DoLiveUSA() == true)
+        {
+            shippingCost = 5;
+        }
+        else
+        {
+            shippingCost = 35;
+        }
+
         return 0;
     }
 

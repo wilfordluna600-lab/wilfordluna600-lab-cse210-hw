@@ -26,4 +26,8 @@ public class Video
         return $"Title: {_title} Author: {_author} Length: {_length} seconds\nNumber of Comments: {GetNumberOfComments()}";
     }
 
+    public List<Comment> GetComments()
+    {
+        return _comments;
+    }
 }

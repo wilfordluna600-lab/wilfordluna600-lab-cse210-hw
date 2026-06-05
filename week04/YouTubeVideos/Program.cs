@@ -8,9 +8,6 @@ class Program
     {
         Console.WriteLine("Hello World! This is the YouTubeVideos Project.");
 
-
-
-
         List<Comment> comments1 = new List<Comment>();
         comments1.Add(new Comment("Sean", "Wow, the scenery is incredible! I've always wanted to visit Cusco, and this video just moved it higher on my travel list."));
         comments1.Add(new Comment("Emily", "The colors, the mountains, and the history all look amazing. Thanks for sharing these beautiful spots!"));
@@ -34,6 +31,21 @@ class Program
         comments3.Add(new Comment("James", "Does this method work for copper pipes as well, or is it only for PVC? Any advice would be appreciated."));
 
         Video video3 = new Video("Fix a Leaky Pipe in Minutes", "Matthew White", 346, comments3);
+
+        List<Video> videosAll = new List<Video>();
+        videosAll.Add(video1);
+        videosAll.Add(video2);
+        videosAll.Add(video3);
+
+        foreach (Video video in videosAll)
+        {
+            Console.WriteLine(video.GetFullInfoVideo());
+            Console.WriteLine("Comments:");
+            foreach (Comment comment in video.GetComments())
+            {
+                Console.WriteLine(comment.GetDisplayComment());
+            }
+        }
 
     }
 }

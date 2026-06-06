@@ -25,7 +25,14 @@ public class Order
             shippingCost = 35;
         }
 
-        return 0;
+        foreach (Product product in _products)
+        {
+            totalCost += product.GetTotalCost();
+        }
+
+        totalCost += shippingCost;
+
+        return totalCost;
     }
 
     public string GetPackingLabel()
@@ -35,6 +42,6 @@ public class Order
 
     public string GetShippingLabel()
     {
-        return "";
+        return $"Name: {_customer.GetName()}\nAddress: {_customer.GetFullAddress()}";
     }
 }

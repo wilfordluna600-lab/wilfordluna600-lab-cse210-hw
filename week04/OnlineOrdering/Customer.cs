@@ -14,6 +14,16 @@ public class Customer
     // If this method DoLiveUSA didn't work I probably
     // would have to change the name of the method,
     // but also is very possible that works well
+
+    public string GetName()
+    {
+        return _name;
+    }
+
+    public string GetFullAddress()
+    {
+        return _address.GetFullAddress();
+    }
     public bool DoLiveUSA()
     {
         return _address.DoLiveUSA();

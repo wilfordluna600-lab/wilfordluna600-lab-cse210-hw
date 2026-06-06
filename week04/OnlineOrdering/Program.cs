@@ -24,7 +24,15 @@ class Program
         ordersAll.Add(order1);
         ordersAll.Add(order2);
 
-
+        foreach (Order order in ordersAll)
+        {
+            Console.WriteLine("Packing Label:");
+            order.GetPackingLabel();
+            Console.WriteLine("Shipping Label:");
+            Console.WriteLine(order.GetShippingLabel());
+            Console.WriteLine($"Total Cost: ${order.GetTotalCost()}");
+            Console.WriteLine();
+        }
 
     }
 }

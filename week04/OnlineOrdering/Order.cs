@@ -35,9 +35,12 @@ public class Order
         return totalCost;
     }
 
-    public string GetPackingLabel()
+    public void GetPackingLabel()
     {
-        return "";
+        foreach (Product product in _products)
+        {
+            Console.WriteLine($"Product Name: {product.GetName()}\nProduct ID: {product.GetProductId()}");
+        }
     }
 
     public string GetShippingLabel()

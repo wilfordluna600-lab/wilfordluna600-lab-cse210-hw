@@ -6,11 +6,11 @@ public class Activity
     private string _description;
     private int _duration;
 
-    public Activity()
+    public Activity(string name, string description, int duration)
     {
-        _name = "";
-        _description = "";
-        _duration = 0;
+        _name = name;
+        _description = description;
+        _duration = duration;
         // It's very possible that I am going to modify this constructor
         // later, so I will review it more later.
     }

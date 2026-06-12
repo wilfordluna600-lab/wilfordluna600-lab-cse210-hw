@@ -20,6 +20,15 @@ public class BreathingActivity : Activity
         ShowCountDown(3);
         Console.WriteLine();
 
+        while (DateTime.Now < endTime)
+        {
+            Console.Write("Breathe in...");
+            ShowCountDown(4);
+            Console.Write("Now breathe out...");
+            ShowCountDown(6);
+            Console.WriteLine();
+        }
+
 
 
 

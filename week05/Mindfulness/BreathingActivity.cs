@@ -1,6 +1,6 @@
 public class BreathingActivity : Activity
 {
-    public BreathingActivity(int duration) : base(duration)
+    public BreathingActivity(string name, string description, int duration) : base(name, description, duration)
     {
         ;
     }
@@ -11,8 +11,8 @@ public class BreathingActivity : Activity
         // Index this part I am writing some code first and then
         // I am going to review that it work wery well.
 
-        DateTime startTime = new DateTime.Now;
-        DateTime endTime = startTime.Add(duration);
+        DateTime startTime = DateTime.Now;
+        DateTime endTime = startTime.AddSeconds(base._duration);
         Console.WriteLine();
         Console.Write("Breathe in...");
         ShowCountDown(2);

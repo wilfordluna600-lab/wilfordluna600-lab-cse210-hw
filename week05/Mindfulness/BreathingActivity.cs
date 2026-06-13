@@ -7,10 +7,6 @@ public class BreathingActivity : Activity
 
     public void Run()
     {
-
-        // Index this part I am writing some code first and then
-        // I am going to review that it work wery well.
-
         DateTime startTime = DateTime.Now;
         DateTime endTime = startTime.AddSeconds(base._duration);
         Console.WriteLine();

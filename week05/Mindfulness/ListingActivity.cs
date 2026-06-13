@@ -59,8 +59,6 @@ public class ListingActivity : Activity
 
     public List<string> GetListFromUser()
     {
-        // It's very possible that I am going to change
-        // this method later
         List<string> Entries = new List<string>();
         DateTime endTime = DateTime.Now.AddSeconds(base._duration);
         while (DateTime.Now < endTime)

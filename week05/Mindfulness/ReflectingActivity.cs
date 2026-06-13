@@ -25,8 +25,6 @@ public class ReflectingActivity : Activity
 
     public ReflectingActivity(string name, string description, int duration) : base(name, description, duration)
     {
-        // It's very possible that I'm going to change this part later,
-        // I'm going to check it more later
         ;
     }
 

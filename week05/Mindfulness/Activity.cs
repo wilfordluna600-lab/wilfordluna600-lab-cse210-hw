@@ -1,7 +1,5 @@
 public class Activity
 {
-    // I am still thinking about if the variables would be private or
-    // protected, I am going to review it more later and maybe change it.
     private string _name;
     private string _description;
     protected int _duration;
@@ -11,8 +9,6 @@ public class Activity
         _name = name;
         _description = description;
         _duration = duration;
-        // It's very possible that I am going to modify this constructor
-        // later, so I will review it more later.
     }
 
     public void DisplayStartingMessage()
@@ -25,10 +21,6 @@ public class Activity
         _duration = int.Parse(Console.ReadLine());
         Console.WriteLine("Get ready...");
         ShowSpinner(5);
-        // I'm going to verify later if this is a good place to put
-        // the spinner
-
-
     }
 
     public void DisplayEndingMessage()

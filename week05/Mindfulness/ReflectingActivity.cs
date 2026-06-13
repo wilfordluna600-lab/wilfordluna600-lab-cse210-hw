@@ -47,7 +47,7 @@ public class ReflectingActivity : Activity
         DisplayPrompt();
         Console.WriteLine();
         Console.WriteLine("When you have something in mind, press enter to continue.");
-        Console.Read();
+        Console.ReadLine();
         Console.WriteLine("Now ponder on each of the following questions as they related to this experience.");
         Console.Write("You may begin in: ");
         base.ShowCountDown(5);

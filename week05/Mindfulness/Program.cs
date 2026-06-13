@@ -8,5 +8,8 @@ class Program
 
         BreathingActivity Ba1 = new BreathingActivity("new", "new", 30);
         Ba1.Run();
+
+        ReflectingActivity Ba2 = new ReflectingActivity("new", "new", 30);
+        Ba2.Run();
     }
 }

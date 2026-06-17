@@ -14,7 +14,7 @@ public class SwimmingActivity : Activity
 
     public override float GetDistance()
     {
-        return base.GetDistanceMeters() / 1000;
+        return (GetSwimmingLaps() * 50) / 1000;
     }
 
     public override float GetSpeed()

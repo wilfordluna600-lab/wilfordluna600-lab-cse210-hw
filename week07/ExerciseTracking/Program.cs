@@ -14,7 +14,7 @@ class Program
 
         SwimmingActivity a3 = new SwimmingActivity("Swimming", 0, 30, 25);
 
-        List<Activity> aList = new List<Activity>;
+        List<Activity> aList = new List<Activity>();
         aList.Add(a1);
         aList.Add(a2);
         aList.Add(a3);

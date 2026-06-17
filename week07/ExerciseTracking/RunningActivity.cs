@@ -1,24 +1,18 @@
 public class RunningActivity : Activity
 {
 
-
     public override float GetDistance()
     {
-        return;
+        return base.GetDistanceMeters() / 1000;
     }
 
     public override float GetSpeed()
     {
-        return;
+        return (GetDistance() / base.GetMinutes()) * 60;
     }
 
     public override float GetPace()
     {
-        return;
-    }
-
-    public override string GetSummary()
-    {
-        return;
+        return base.GetMinutes() / GetDistance();
     }
 }

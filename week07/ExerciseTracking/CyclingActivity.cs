@@ -4,23 +4,16 @@ public class CyclingActivity : Activity
 
     public override float GetDistance()
     {
-        return;
+        return base.GetDistanceMeters() / 1000;
     }
 
     public override float GetSpeed()
     {
-        return;
+        return (GetDistance() / base.GetMinutes()) * 60;
     }
 
     public override float GetPace()
     {
-        return;
-    }
-
-    public override string GetSummary()
-    {
-        DateTime now = DateTime.Now;
-        Console.WriteLine($"{now.Day}, {now.ToString("MMM")}, {now.Year}");
-        return;
+        return base.GetMinutes() / GetDistance();
     }
 }

@@ -1,6 +1,16 @@
 public class SwimmingActivity : Activity
 {
 
+    private float _swimmingLaps;
+    public SwimmingActivity(string name, float minutes, float swimmingLaps) : base(name, minutes)
+    {
+        _swimmingLaps = swimmingLaps;
+    }
+
+    public float GetSwimmingLaps()
+    {
+        return _swimmingLaps;
+    }
 
     public override float GetDistance()
     {

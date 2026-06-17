@@ -1,6 +1,10 @@
 public class CyclingActivity : Activity
 {
 
+    public CyclingActivity(string name, float distance, float minutes) : base(name, distance, minutes)
+    {
+        ;
+    }
 
     public override float GetDistance()
     {

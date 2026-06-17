@@ -1,6 +1,9 @@
 public class RunningActivity : Activity
 {
-
+    public RunningActivity(string name, float distance, float minutes) : base(name, distance, minutes)
+    {
+        ;
+    }
     public override float GetDistance()
     {
         return base.GetDistanceMeters() / 1000;

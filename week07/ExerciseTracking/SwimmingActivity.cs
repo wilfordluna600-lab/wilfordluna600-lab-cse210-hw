@@ -2,7 +2,7 @@ public class SwimmingActivity : Activity
 {
 
     private float _swimmingLaps;
-    public SwimmingActivity(string name, float minutes, float swimmingLaps) : base(name, minutes)
+    public SwimmingActivity(string name, float distance, float minutes, float swimmingLaps) : base(name, distance, minutes)
     {
         _swimmingLaps = swimmingLaps;
     }

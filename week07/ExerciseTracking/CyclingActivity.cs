@@ -19,6 +19,8 @@ public class CyclingActivity : Activity
 
     public override string GetSummary()
     {
+        DateTime now = DateTime.Now;
+        Console.WriteLine($"{now.Day}, {now.ToString("MMM")}, {now.Year}");
         return;
     }
 }

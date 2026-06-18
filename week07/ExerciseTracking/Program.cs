@@ -12,7 +12,7 @@ class Program
 
         CyclingActivity a2 = new CyclingActivity("Cycling", 5000, 30);
 
-        SwimmingActivity a3 = new SwimmingActivity("Swimming", 30, 25);
+        SwimmingActivity a3 = new SwimmingActivity("Swimming", 25, 30);
 
         List<Activity> aList = new List<Activity>();
         aList.Add(a1);

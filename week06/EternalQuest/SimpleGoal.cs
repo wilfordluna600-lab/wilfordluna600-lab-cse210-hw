@@ -11,17 +11,17 @@ public class SimpleGoal : Goal
 
     // I am going to type the constructor later
 
-    public void RecordEvent()
+    public override void RecordEvent()
     {
 
     }
 
-    public bool IsComplete()
+    public override bool IsComplete()
     {
 
     }
 
-    public string GetStringRepresentation()
+    public override string GetStringRepresentation()
     {
 
     }

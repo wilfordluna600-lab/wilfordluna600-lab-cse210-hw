@@ -10,22 +10,22 @@ public class ChecklistGoal : Goal
         _bonus = bonus;
     }
 
-    public void RecordEvent()
+    public override void RecordEvent()
     {
 
     }
 
-    public bool IsComplete()
+    public override bool IsComplete()
     {
 
     }
 
-    public string GetDetailsString()
+    public override string GetDetailsString()
     {
 
     }
 
-    public string GetStringRepresentation()
+    public override string GetStringRepresentation()
     {
 
     }

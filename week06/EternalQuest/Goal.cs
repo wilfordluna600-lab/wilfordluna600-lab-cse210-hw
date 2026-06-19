@@ -30,8 +30,5 @@ public abstract class Goal
         return $"[ ] {GetName()} ({GetDescription()}) ";
     }
 
-    public string GetStringRepresentation()
-    {
-
-    }
+    public abstract string GetStringRepresentation();
 }

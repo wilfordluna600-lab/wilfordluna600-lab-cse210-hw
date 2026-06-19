@@ -9,8 +9,6 @@ public class SimpleGoal : Goal
         ;
     }
 
-    // I am going to type the constructor later
-
     public override void RecordEvent()
     {
 

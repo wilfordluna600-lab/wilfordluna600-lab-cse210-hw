@@ -1,4 +1,4 @@
-public class Goal
+public abstract class Goal
 {
     private string _shortName;
     private string _description;
@@ -11,17 +11,11 @@ public class Goal
         _points = points;
     }
 
-    public void RecordEvent()
-    {
+    public abstract void RecordEvent();
 
-    }
+    public abstract bool IsComplete();
 
-    public bool IsComplete()
-    {
-
-    }
-
-    public string GetDetailsString()
+    public virtual string GetDetailsString()
     {
 
     }
